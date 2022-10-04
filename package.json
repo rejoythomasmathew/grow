@@ -1,5 +1,5 @@
 {
-  "name": "strapi",
+  "name": "grow-backend",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -11,14 +11,15 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/plugin-i18n": "4.1.9",
-    "@strapi/plugin-users-permissions": "4.1.9",
+    "@strapi/plugin-i18n": "4.4.1",
+    "@strapi/plugin-users-permissions": "4.4.1",
+    "@strapi/strapi": "4.4.1",
     "@strapi/provider-upload-cloudinary": "4.1.9",
-    "@strapi/strapi": "4.1.9",
+    "better-sqlite3": "7.4.6",
     "pg": "8.7.3"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Rejoy Thomas Mathew"
   },
   "strapi": {
     "uuid": "35d7a084-3088-4d0b-869e-f503693ee8e5"
