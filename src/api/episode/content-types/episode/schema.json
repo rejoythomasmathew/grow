@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "episodes",
+  "info": {
+    "singularName": "episode",
+    "pluralName": "episodes",
+    "displayName": "Podcast Episode",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 60,
+      "minLength": 40
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "tagline": {
+      "type": "text",
+      "required": true,
+      "maxLength": 70,
+      "minLength": 50
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 450
+    },
+    "cover_image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "episode_number": {
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "min": 1
+    },
+    "episode_link": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "listen_time": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    },
+    "published_date": {
+      "type": "date",
+      "required": true
+    }
+  }
+}
