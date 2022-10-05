@@ -34,6 +34,18 @@
       "type": "customField",
       "required": true,
       "customField": "plugin::color-picker.color"
+    },
+    "primary_articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article",
+      "mappedBy": "primary_topic"
+    },
+    "related_articles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "inversedBy": "related_topics"
     }
   }
 }
