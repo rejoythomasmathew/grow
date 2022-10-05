@@ -17,7 +17,8 @@
     "@strapi/provider-upload-cloudinary": "4.1.9",
     "@strapi/strapi": "4.4.1",
     "better-sqlite3": "7.4.6",
-    "pg": "8.7.3"
+    "pg": "8.7.3",
+    "strapi-tiptap-editor": "^0.9.1"
   },
   "author": {
     "name": "Rejoy Thomas Mathew"
