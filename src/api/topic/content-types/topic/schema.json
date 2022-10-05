@@ -45,7 +45,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::article.article",
-      "inversedBy": "related_topics"
+      "mappedBy": "related_topics"
     }
   }
 }
